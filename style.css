@@ -1,0 +1,165 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #111;
+}
+
+header, .hero, footer {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #ff4444;
+    text-shadow: 0 0 10px #ff4444;
+    animation: pulse 2s infinite;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+nav ul li a:hover {
+    color: #ff4444;
+    text-shadow: 0 0 15px #ff4444;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #ff4444;
+}
+
+section.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff4444;
+}
+
+section.content h2 {
+    color: #ff4444;
+    font-size: 22px;
+    text-shadow: 0 0 10px #ff4444;
+    margin-bottom: 15px;
+}
+
+section.content p {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+section.navigation-options {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+section.navigation-options h2 {
+    color: #ff4444;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section.navigation-options ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.navigation-options ul li {
+    margin: 10px 0;
+}
+
+section.navigation-options ul li a {
+    color: #00ff00;
+    font-size: 18px;
+    text-decoration: none;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+section.navigation-options ul li a:hover {
+    color: #ff4444;
+    text-shadow: 0 0 15px #ff4444;
+}
+
+section.learn-more {
+    text-align: center;
+    padding: 40px 0;
+}
+
+section.learn-more .button {
+    background-color: #333;
+    color: #00ff00;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    animation: pulse 2s infinite;
+}
+
+section.learn-more .button:hover {
+    background-color: #00ff00;
+    color: #111;
+    box-shadow: 0 0 15px #00ff00;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #666;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
